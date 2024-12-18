@@ -1,0 +1,41 @@
+{
+  "appName": "Batcher",
+  "menu": {
+    "about": "About",
+    "manageProducts": "Manage Products",
+    "manageBatches": "Manage Batches",
+    "settings": "Settings"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "createBatch": "Create Batch",
+  "selectProduct": "Select Product",
+  "batchComments": "Comments",
+  "lastBatches": "Last 3 Batches",
+  "export": "Export",
+  "import": "Import",
+  "overwrite": "Overwrite Existing Data",
+  "merge": "Merge Data",
+  "importSummary": "Import Summary",
+  "filter": "Filter",
+  "search": "Search",
+  "addProduct": "Add Product",
+  "editProduct": "Edit Product",
+  "productName": "Product Name",
+  "sellByDays": "Sell-by Days",
+  "expirationDays": "Expiration Days",
+  "comments": "Comments",
+  "save": "Save",
+  "cancel": "Cancel",
+  "creationDate": "Creation Date",
+  "sellByDate": "Sell-By Date",
+  "expirationDate": "Expiration Date",
+  "status": "Status",
+  "all": "All",
+  "active": "Active",
+  "nearSellBy": "Near Sell-By",
+  "expired": "Expired",
+  "showExpiredBatches": "Show Expired Batches"
+}

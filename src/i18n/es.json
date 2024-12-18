@@ -1,0 +1,41 @@
+{
+  "appName": "Batcher",
+  "menu": {
+    "about": "Acerca de",
+    "manageProducts": "Gestionar Productos",
+    "manageBatches": "Gestionar Lotes",
+    "settings": "Configuraciones"
+  },
+  "language": {
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "createBatch": "Crear Lote",
+  "selectProduct": "Seleccionar Producto",
+  "batchComments": "Comentarios",
+  "lastBatches": "Últimos 3 Lotes",
+  "export": "Exportar",
+  "import": "Importar",
+  "overwrite": "Sobrescribir Datos Existentes",
+  "merge": "Fusionar Datos",
+  "importSummary": "Resumen de Importación",
+  "filter": "Filtrar",
+  "search": "Buscar",
+  "addProduct": "Agregar Producto",
+  "editProduct": "Editar Producto",
+  "productName": "Nombre del Producto",
+  "sellByDays": "Días para Vender",
+  "expirationDays": "Días para Expirar",
+  "comments": "Comentarios",
+  "save": "Guardar",
+  "cancel": "Cancelar",
+  "creationDate": "Fecha de Creación",
+  "sellByDate": "Fecha de Vencimiento para Venta",
+  "expirationDate": "Fecha de Expiración",
+  "status": "Estado",
+  "all": "Todos",
+  "active": "Activo",
+  "nearSellBy": "Cerca de Fecha de Venta",
+  "expired": "Expirado",
+  "showExpiredBatches": "Mostrar Lotes Expirados"
+}
