@@ -4,6 +4,8 @@ A simple app in English and Spanish to manages batches of home based food busine
 
 NOTE: This readme was mostly written by an LLM, which is why it looks a bit ridiculous and sounds llike a sales pitch.
 
+There might be an online version here: https://batcher-azure.vercel.app/
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/furuknap/batcher)](https://github.com/furuknap/batcher/issues)
 [![GitHub Forks](https://img.shields.io/github/forks/furuknap/batcher)](https://github.com/furuknap/batcher/network)
