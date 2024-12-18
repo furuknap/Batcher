@@ -28,7 +28,7 @@ NOTE: This readme was mostly written by an LLM, which is why it looks a bit ridi
 
 Built with Vue.js, Vite, and Pinia, Batcher offers a seamless experience for creating, tracking, and managing product batches. With offline capabilities and an intuitive interface, Batcher ensures that your batch management is always at your fingertips.
 
-![Batcher Screenshot](public/screenshot.png)
+![Batcher Screenshot](Screenshot.png)
 
 ## Features
 
