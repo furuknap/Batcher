@@ -5,7 +5,6 @@ A simple app in English and Spanish to manages batches of home based food busine
 NOTE: This readme was mostly written by an LLM, which is why it looks a bit ridiculous and sounds llike a sales pitch.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/furuknap/batcher/build.yml?branch=main)](https://github.com/furuknap/batcher/actions)
 [![GitHub Issues](https://img.shields.io/github/issues/furuknap/batcher)](https://github.com/furuknap/batcher/issues)
 [![GitHub Forks](https://img.shields.io/github/forks/furuknap/batcher)](https://github.com/furuknap/batcher/network)
 [![GitHub Stars](https://img.shields.io/github/stars/furuknap/batcher)](https://github.com/furuknap/batcher/stargazers)
