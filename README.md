@@ -1,15 +1,14 @@
-
 # Batcher
 
-A simple app in English and Spanish to manages batches of home based food businesses. Batcher is free, released under MIT license, and a gift from https://almendras.co/ to the world. 
+A simple app in English and Spanish to manages batches of home based food businesses. Batcher is free, released under MIT license, and a gift from https://almendras.co/ to the world.
 
-NOTE: This readme was mostly written by an LLM, which is why it looks a bit ridiculous and sounds llike a sales pitch. 
+NOTE: This readme was mostly written by an LLM, which is why it looks a bit ridiculous and sounds llike a sales pitch.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/almendras.co/batcher/build.yml?branch=main)](https://github.com/almendras.co/batcher/actions)
-[![GitHub Issues](https://img.shields.io/github/issues/almendras.co/batcher)](https://github.com/almendras.co/batcher/issues)
-[![GitHub Forks](https://img.shields.io/github/forks/almendras.co/batcher)](https://github.com/almendras.co/batcher/network)
-[![GitHub Stars](https://img.shields.io/github/stars/almendras.co/batcher)](https://github.com/almendras.co/batcher/stargazers)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/furuknap/batcher/build.yml?branch=main)](https://github.com/furuknap/batcher/actions)
+[![GitHub Issues](https://img.shields.io/github/issues/furuknap/batcher)](https://github.com/furuknap/batcher/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/furuknap/batcher)](https://github.com/furuknap/batcher/network)
+[![GitHub Stars](https://img.shields.io/github/stars/furuknap/batcher)](https://github.com/furuknap/batcher/stargazers)
 
 ## Table of Contents
 
@@ -62,7 +61,7 @@ Built with Vue.js, Vite, and Pinia, Batcher offers a seamless experience for cre
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/almendras.co/batcher.git
+   git clone https://github.com/furuknap/batcher.git
    cd batcher
    ```
 
@@ -142,7 +141,7 @@ Ensuring that Batcher functions correctly as a PWA involves testing various feat
 ### Using Chrome DevTools
 
 1. **Open DevTools**
-   
+
    - Press `F12` or `Ctrl+Shift+I` (Windows/Linux).
    - Press `Cmd+Option+I` (Mac).
 
@@ -201,7 +200,7 @@ Contributions are welcome! To contribute to Batcher, please follow these steps:
 2. **Clone Your Fork**
 
    ```bash
-   git clone https://github.com/almendras.co/batcher.git
+   git clone https://github.com/furuknap/batcher.git
    cd batcher
    ```
 
@@ -244,7 +243,7 @@ For any inquiries or feedback, please contact:
 
 ## Acknowledgments
 
-- Inspired by the need to efficiently manage candied almonds and cookie batches.
+- Inspired by the need to efficiently manage candied almonds and cookie batches. Check out https://almendras.co/
 - Special thanks to the contributors of the open-source libraries used in this project.
 
 ---
