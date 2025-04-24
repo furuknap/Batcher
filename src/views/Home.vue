@@ -1,46 +1,70 @@
 <!-- src/views/Home.vue -->
 <template>
-    <div class="home">
-        <h2>{{ $t('createBatch') }}</h2>
-        <form @submit.prevent="createBatch">
-            <div>
-                <label for="product">{{ $t('selectProduct') }}</label>
-                <select v-model="selectedProduct" required>
-                    <option disabled value="">{{ $t('selectProduct') }}</option>
-                    <option v-for="product in products" :key="product.id" :value="product">
-                        {{ product.name }}
-                    </option>
-                </select>
+    <div class="home container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>{{ $t('createBatch') }}</h2>
+                    </div>
+                    <div class="card-body">
+                        <form @submit.prevent="createBatch">
+                            <div class="mb-3">
+                                <label for="product" class="form-label">{{ $t('selectProduct') }}</label>
+                                <select id="product" class="form-select" v-model="selectedProduct" required>
+                                    <option disabled value="">{{ $t('selectProduct') }}</option>
+                                    <option v-for="product in products" :key="product.id" :value="product">
+                                        {{ product.name }}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">{{ $t('batchComments') }}</label>
+                                <input type="text" id="comments" class="form-control" v-model="comments" />
+                            </div>
+                            <button type="submit" class="btn btn-primary">{{ $t('createBatch') }}</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div v-if="lastCreatedBatch" class="card mt-4">
+                    <div class="card-body">
+                        <h3 class="mb-0">Batch Number: <strong>{{ lastCreatedBatch }}</strong></h3>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="comments">{{ $t('batchComments') }}</label>
-                <input type="text" v-model="comments" />
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="mb-0">{{ $t('lastBatches') }}</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li v-for="batch in recentBatches" :key="batch.number" class="list-group-item d-flex justify-content-between align-items-center">
+                                {{ batch.productName }} - #{{ batch.number }}
+                                <span v-if="isSellByNear(batch)" class="badge bg-danger rounded-pill">!</span>
+                            </li>
+                        </ul>
+                        <p v-if="recentBatches.length === 0" class="text-muted">No recent batches</p>
+                    </div>
+                </div>
+
+                <!-- In-App Alerts -->
+                <div v-if="alerts.length" class="card bg-danger text-white">
+                    <div class="card-header">
+                        <h3 class="mb-0">Alerts</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li v-for="alert in alerts" :key="alert.number" class="list-group-item bg-danger text-white border-light">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                Batch #{{ alert.number }} of {{ alert.productName }} is one day away from sell-by date.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <button type="submit">{{ $t('createBatch') }}</button>
-        </form>
-
-        <div v-if="lastCreatedBatch" class="last-batch">
-            <h3>Batch Number: <strong>{{ lastCreatedBatch }}</strong></h3>
-        </div>
-
-        <div class="recent-batches">
-            <h3>{{ $t('lastBatches') }}</h3>
-            <ul>
-                <li v-for="batch in recentBatches" :key="batch.number">
-                    {{ batch.productName }} - #{{ batch.number }}
-                    <span v-if="isSellByNear(batch)" class="alert">!</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- In-App Alerts -->
-        <div v-if="alerts.length" class="alerts">
-            <h3>Alerts</h3>
-            <ul>
-                <li v-for="alert in alerts" :key="alert.number">
-                    Batch #{{ alert.number }} of {{ alert.productName }} is one day away from sell-by date.
-                </li>
-            </ul>
         </div>
     </div>
 </template>
@@ -131,39 +155,38 @@ export default {
 </script>
 
 <style scoped>
+/* Most styling is now handled by Bootstrap classes and global CSS variables */
 .home {
-    padding: 20px;
+    padding: 1.5rem 0;
 }
 
-form div {
-    margin-bottom: 10px;
+.card {
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+.list-group-item {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.last-batch {
-    margin-top: 20px;
-    font-size: 18px;
+.badge {
+    transition: background-color 0.3s ease;
 }
 
-.recent-batches ul {
-    list-style: none;
-    padding: 0;
+/* Dark mode specific overrides */
+:global(.dark-theme) .list-group-item {
+    background-color: var(--card-bg);
+    color: var(--text-color);
 }
 
-.alert {
-    color: red;
-    font-weight: bold;
-    margin-left: 10px;
+:global(.dark-theme) .bg-danger {
+    background-color: #842029 !important;
 }
 
-.alerts {
-    margin-top: 20px;
-    background-color: #ffe5e5;
-    padding: 10px;
-    border: 1px solid red;
+:global(.dark-theme) .text-muted {
+    color: var(--text-muted) !important;
 }
 </style>

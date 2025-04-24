@@ -10,6 +10,11 @@
     "english": "English",
     "spanish": "Spanish"
   },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "toggle": "Toggle Theme"
+  },
   "createBatch": "Create Batch",
   "selectProduct": "Select Product",
   "batchComments": "Comments",

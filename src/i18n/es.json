@@ -10,6 +10,11 @@
     "english": "Inglés",
     "spanish": "Español"
   },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro",
+    "toggle": "Cambiar Tema"
+  },
   "createBatch": "Crear Lote",
   "selectProduct": "Seleccionar Producto",
   "batchComments": "Comentarios",

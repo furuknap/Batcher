@@ -6,6 +6,7 @@ import { createI18n } from 'vue-i18n'
 import router from './router'
 import en from './i18n/en.json'
 import es from './i18n/es.json'
+import './style.css'
 
 //import 'vite-plugin-pwa/dist/style.css' // If any styles are needed
 
